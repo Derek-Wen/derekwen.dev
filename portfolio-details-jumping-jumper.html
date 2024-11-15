@@ -4,18 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details Dsc180a - Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Portfolio Details - Jumping Jumper</title>
+  <meta name="description" content="Description of Jumping Jumper project">
+  <meta name="keywords" content="Jumping Jumper, fun project, portfolio">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,14 +27,11 @@
 
 </head>
 
-<body class="portfolio-details-dsc180a-page">
+<body class="portfolio-details-jumping-jumper-page">
 
-  <header id="header" class="header d-flex align-items-center position-relative" style="">
+  <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">derek wen</h1>
       </a>
 
@@ -63,7 +58,6 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -73,8 +67,8 @@
     <div class="page-title" data-aos="fade">
     </div><!-- End Page Title -->
 
-    <!-- Portfolio Details 2 Section -->
-    <section id="portfolio-details-2" class="portfolio-details section portfolio-details-2">
+    <!-- Portfolio Details 5 Section -->
+    <section id="portfolio-details-5" class="portfolio-details section portfolio-details-2 portfolio-details-5">
 
       <div class="container" data-aos="fade-up">
 
@@ -82,31 +76,76 @@
 
           <div class="col-lg-8" data-aos="fade-up">
             <div class="portfolio-description">
-              <h2>Utility Structures Identification with SDGE</h2>
+              <h2>Jumping Jumper</h2>
               <p>
-                This project was a collaboration with San Diego Gas &amp; Electric. The project uses Google Street View and computer vision to identify utility structures in San Diego. A python script is created to collect images of powerline poles and overhead structures in different angles and field of view using the Google Street View API, which then serve to train a computer vision model (DETR) and is then fine-tuned. The analysis of DETR models trained on minimal and extensive image sets reveals that while both show effective learning, the extensively trained model is more prone to overfitting, as seen in higher class error and misclassifications in certain cases.
+                Jumping Jumper is an engaging JavaScript-based platformer game developed using HTML5 Canvas. Players control a character navigating through a series of platforms while avoiding various obstacles such as projectiles, lasers, and moving walls. The game introduces a strategic "Flow" mechanic that allows players to temporarily slow down time, providing an edge in dodging incoming threats. As players survive longer, the game's difficulty scales dynamically, offering an increasingly challenging and immersive experience.
               </p>
-
+              <p>
+                Utilized HTML5 Canvas for rendering game graphics, enabling dynamic visuals and smooth animations. Implemented game mechanics and logic using JavaScript, including the double-jump feature, Flow mode, and dynamic difficulty scaling.
+              </p>
             </div>
           </div>
 
           <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="portfolio-info">
-              <h3>project information</h3>
+              <h3>Project Information</h3>
               <ul>
-                <li><strong>Category</strong> Automated Data Collection / Computer Vision / Machine Learning </li>
-                <li><strong>Project URL</strong> <a href="https://github.com/Derek-Wen/StreetViewRiskDetector-DSC180A">https://github.com/Derek-Wen/StreetViewRiskDetector-DSC180A</a></li>
+                <li><strong>Category:</strong> Web Application / Game Development</li>
+                <li><strong>Project URL:</strong> <a href="https://github.com/Derek-Wen/jumping-jumper">https://github.com/Derek-Wen/jumping-jumper</a></li>
+                <li><a href="https://derek-wen.github.io/jumping-jumper/" class="btn-visit align-self-start">Play Now</a></li>
               </ul>
             </div>
           </div>
-        
-        <embed src="assets/img/portfolio/DSC_Capstone_Quarter1_Project.pdf" type="application/pdf" width="100%" height="1000px" />
+
+          <div class="portfolio-details-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/jumpingjumper2.png" alt="Jumping Jumper Screenshot 1">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/jumpingjumper3.png" alt="Jumping Jumper Screenshot 2">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/jumpingjumper4.png" alt="Jumping Jumper Screenshot 3">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/jumpingjumper5.png" alt="Jumping Jumper Screenshot 3">
+              </div>
+
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Portfolio Details 2 Section -->
+    </section><!-- /Portfolio Details 5 Section -->
 
   </main>
 
@@ -117,7 +156,6 @@
         <div class="copyright">
           <span>Copyright 2024</span> <strong class="px-1 sitename">derek wen</strong> <span>All Rights Reserved</span>
         </div>
-
       </div>
     </div>
   </footer>
@@ -130,9 +168,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

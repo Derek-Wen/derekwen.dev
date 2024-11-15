@@ -2251,3 +2251,8 @@ section,
 .tabs-3 .tab-pane p:last-child {
   margin-bottom: 0;
 }
+
+/* Specific styles for the music page */
+.music-page .composition-details h4 a {
+  color: white !important; /* Change text color to white */
+}
