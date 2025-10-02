@@ -27,31 +27,56 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Page-specific: center Spotify players without changing their size -->
+  <style>
+    /* Center the column that contains the player while keeping its md width */
+    .composition-entry .col-md-6 {
+      margin-left: auto;
+      margin-right: auto;
+      float: none; /* ensure no float interferes on some layouts */
+      display: block; /* keep behavior consistent */
+    }
+
+    /* On small screens, restore normal full-width columns */
+    @media (max-width: 767.98px) {
+      .composition-entry .col-md-6 {
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+      }
+    }
+
+    /* Ensure iframe keeps its original visual size and fills its column */
+    .composition-entry .ratio iframe {
+      width: 100% !important;
+      height: 304px !important;
+      max-width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+  </style>
+
 </head>
 
 <body class="music-page">
 
-  <header id="header" class="header d-flex align-items-center position-relative" style="">
+  <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">derek wen</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">about</a></li>
-          <li><a href="ucla.html">ucla</a></li>
-          <li><a href="ucsd.html">ucsd</a></li>
           <li><a href="portfolio.html">projects</a></li>
           <li><a href="video-editing.html">video editing</a></li>
           <li><a href="music.html" class="active">music</a></li>
-          <li class="dropdown"><a href="#"><span>career</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown">
+            <a href="#"><span>career</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="work.html">work experience</a></li>
-              </li>
               <li><a href="cv.html">cv</a></li>
             </ul>
           </li>
@@ -65,251 +90,157 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-    </div><!-- End Page Title -->
+    <div class="page-title" data-aos="fade"></div>
 
-    <!-- Starter Section Section -->
+    <!-- Starter Section -->
     <section id="starter-section" class="starter-section section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h1>year 3</h1>
-        <p>
-          experimenting.
-        </p>
+        <p>experimenting.</p>
       </div>
 
-      <!-- Compositions Section -->
       <div class="section-title">
         <h2>songs</h2>
       </div>
 
-      <!-- Composition Entries Container -->
       <div class="container">
-        <!-- Repeat this block for each composition -->
         <div class="composition-entry" data-aos="fade-up">
           <div class="row">
             <div class="col-md-6">
-              <!-- Responsive YouTube Video Embed -->
               <div class="ratio ratio-16x9">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7xHhAogCl2zWWNMOWB8GMY?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-              <div class="composition-details">
-                <h4 style="color: white;">
-                  <a href="https://open.spotify.com/track/7xHhAogCl2zWWNMOWB8GMY?si=915cdb8906ec4f09">
-                    reaching too far mirin remix (ft. riensu &amp; max ruben)
-                  </a>
-                </h4>
-                <p><em>Rating: 7.5/10</em></p>
-                <p>
-                  wanted to redeem myself from my very first song.
-                </p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2BYIIuveZuiQFrfbaXQwT3?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </div>
             </div>
           </div>
         </div>
 
-      <!-- Section Title -->
+        <div class="composition-entry" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2YkyXcxICUYWgcWcQ73cUl?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="composition-entry" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4Q6k3ZujHQtrl1OmuXAyUi?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="composition-entry" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7xHhAogCl2zWWNMOWB8GMY?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="container section-title" data-aos="fade-up">
         <h1>year 2</h1>
-        <p>
-          figuring things out.
-        </p>
+        <p>figuring things out.</p>
       </div>
 
-      <!-- Compositions Section -->
       <div class="section-title">
         <h2>songs</h2>
       </div>
-      
 
-      <!-- Composition Entries Container -->
       <div class="container">
-        <!-- Repeat this block for each composition -->
         <div class="composition-entry" data-aos="fade-up">
           <div class="row">
             <div class="col-md-6">
-              <!-- Responsive YouTube Video Embed -->
               <div class="ratio ratio-16x9">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0cP9pFcTTHM3bdeTBhLI42?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-              <div class="composition-details">
-                <h4 style="color: white;">
-                  <a href="https://open.spotify.com/track/0cP9pFcTTHM3bdeTBhLI42?si=9c712a474c9145f8">
-                    hallucinations (ft. yuni)
-                  </a>
-                </h4>
-                <p><em>Rating: 8.5/10</em></p>
-                <p>
-                  super lucky to have yuni feature in one of my songs, he's super talented and i tried to match his energy in this song.
-                </p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0cP9pFcTTHM3bdeTBhLI42?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </div>
             </div>
           </div>
         </div>
 
-      <!-- Composition Entries Container -->
-      <div class="container">
-        <!-- Repeat this block for each composition -->
         <div class="composition-entry" data-aos="fade-up">
           <div class="row">
             <div class="col-md-6">
-              <!-- Responsive YouTube Video Embed -->
               <div class="ratio ratio-16x9">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0fAxd8ZIFIrI7CqjX0faf0?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-              <div class="composition-details">
-                <h4 style="color: white;">
-                  <a href="https://open.spotify.com/track/28q5ayWFImcNdF0K5VZDO8?si=0831adcb9973420a">
-                    i adore you, dear
-                  </a>
-                </h4>
-                <p><em>Rating: 7/10</em></p>
-                <p>
-                  spent roughly 50+ hours alone on the vocals. by far my biggest project to date. wanted to try a different style from what i usually do.
-                </p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0fAxd8ZIFIrI7CqjX0faf0?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </div>
             </div>
           </div>
         </div>
 
-
-        <!-- Repeat this block for each composition -->
         <div class="composition-entry" data-aos="fade-up">
           <div class="row">
             <div class="col-md-6">
-              <!-- Responsive YouTube Video Embed -->
               <div class="ratio ratio-16x9">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/28q5ayWFImcNdF0K5VZDO8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-              <div class="composition-details">
-                <h4>
-                  <a href="https://open.spotify.com/track/28q5ayWFImcNdF0K5VZDO8?si=0831adcb9973420a">
-                    ENOUGH
-                  </a>
-                </h4>
-                <p><em>Rating: 9/10</em></p>
-                <p>
-                  worked with mirin and experimented with formant shifting. shane is my music best friend for life.
-                </p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/28q5ayWFImcNdF0K5VZDO8?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </div>
             </div>
           </div>
         </div>
 
-      <!-- Repeat this block for each composition -->
-      <div class="composition-entry" data-aos="fade-up">
-        <div class="row">
-          <div class="col-md-6">
-            <!-- Responsive YouTube Video Embed -->
-            <div class="ratio ratio-16x9">
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Z3wT9OTPvX8y4vVPDuRji?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="composition-details">
-              <h4><a href="https://open.spotify.com/track/6Z3wT9OTPvX8y4vVPDuRji?si=5ce6f9eb60934b72"> see </a>
-              <p><em>Rating: 9.5/10</em></p>
-              <p>
-                first ever solo song that i am proud of and marked a new era for how i would sing/mix. i had the idea for a long time, but was i never ready until i thought i was "good enough". still my favorite song so far.
-                <br><br>
-              </p>
+        <div class="composition-entry" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Z3wT9OTPvX8y4vVPDuRji?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h1>year 1</h1>
-        <p>
-          starting out.
-        </p>
+        <p>starting out.</p>
       </div>
 
-      <!-- Compositions Section -->
       <div class="section-title">
         <h2>songs</h2>
       </div>
 
-      <!-- Repeat this block for each composition -->
-      <div class="composition-entry" data-aos="fade-up">
-        <div class="row">
-          <div class="col-md-6">
-            <!-- Responsive YouTube Video Embed -->
-            <div class="ratio ratio-16x9">
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0FhQD7YBmIpN7k7lZS9u7O?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="composition-details">
-              <h4><a href="https://open.spotify.com/track/0FhQD7YBmIpN7k7lZS9u7O?si=395973121ddf4eef"> trust u (ft. riensu, ri4h, maxrrss, manni ✰, &amp; yoku)</a>
-              <p><em>Rating: 5/10</em></p>
-              <p>
-                my first song to hit 1,000 streams in under 24 hours and by far my most popular song.
-                <br><br>
-              </p>
+      <div class="container">
+        <div class="composition-entry" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0FhQD7YBmIpN7k7lZS9u7O?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Repeat this block for each composition -->
-      <div class="composition-entry" data-aos="fade-up">
-        <div class="row">
-          <div class="col-md-6">
-            <!-- Responsive YouTube Video Embed -->
-            <div class="ratio ratio-16x9">
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4RKBnZQHdT94jbhCGusIQP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="composition-details">
-              <h4><a href="https://open.spotify.com/track/4RKBnZQHdT94jbhCGusIQP?si=b3e43a2ddb0e4071">don’t go (ft. riensu &amp; manni ✰) </a>
-              <p><em>Rating: 4/10</em></p>
-              <p>
-                one of my favorite and most underrated songs.
-                <br><br>
-              </p>
+
+        <div class="composition-entry" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4RKBnZQHdT94jbhCGusIQP?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Repeat this block for each composition -->
-      <div class="composition-entry" data-aos="fade-up">
-        <div class="row">
-          <div class="col-md-6">
-            <!-- Responsive YouTube Video Embed -->
-            <div class="ratio ratio-16x9">
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7BFpi1NVX0d3Dg2WE4O3tT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="composition-details">
-              <h4><a href="https://open.spotify.com/track/7BFpi1NVX0d3Dg2WE4O3tT?si=819204956d4549ab">reaching too far (ft. riensu &amp; max ruben) </a>
-              <p><em>Rating: 2/10</em></p>
-              <p>
-                my first ever song with the help from riensu and max. i was going through a very rough period in my life so i was grateful to express my emotions and feelings through this song.
-                <br><br>
-              </p>
+
+        <div class="composition-entry" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7BFpi1NVX0d3Dg2WE4O3tT?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
             </div>
           </div>
         </div>
+
+        <p class="final-note">thank you for checking out my songs i really appreciate it</p>
       </div>
 
-      <!-- Final Note -->
-      <p class="final-note">
-        thank you for checking out my songs i really appreciate it
-      </p>
-
-    </section><!-- /Starter Section Section -->
+    </section>
 
   </main>
 
@@ -320,7 +251,6 @@
         <div class="copyright">
           <span>Copyright 2024</span> <strong class="px-1 sitename">derek wen</strong> <span>All Rights Reserved</span>
         </div>
-
       </div>
     </div>
   </footer>
