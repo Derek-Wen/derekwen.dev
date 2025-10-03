@@ -27,6 +27,28 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Page-specific: work timeline styles -->
+  <style>
+    /* Scoped timeline styling for work page */
+    #starter-section .work-timeline { position: relative; padding-left: 1rem; }
+    #starter-section .work-timeline::before {
+      content: ""; position: absolute; left: 1.25rem; top: 0; bottom: 0; width: 2px; background: rgba(255,255,255,0.06);
+    }
+    .work-item { position: relative; padding: 1rem 1rem 1rem 2.5rem; margin-bottom: 0.6rem; }
+    .work-item::before {
+      content: ""; position: absolute; left: 0.9rem; top: 1.1rem; width: 12px; height: 12px; border-radius: 50%;
+      background: var(--color-primary, #6c63ff); box-shadow: 0 0 0 4px rgba(108,99,255,0.08);
+    }
+    .work-date { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-bottom: 0.35rem; }
+    .work-role { font-weight: 700; font-size: 1.05rem; margin-bottom: 0.25rem; color: #fff; }
+    .work-company { color: #fff; margin-bottom: 0.5rem; }
+    .work-bullets { margin: 0; padding-left: 1rem; color: rgba(255,255,255,0.9); }
+    @media (max-width: 767.98px) {
+      #starter-section .work-timeline::before { left: 0.9rem; }
+      .work-item { padding-left: 2.2rem; }
+      .work-item::before { left: 0.6rem; }
+    }
+  </style>
 </head>
 
 <body class="music-page">
@@ -64,20 +86,60 @@
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
+      <div class="container">
+        <h2>work experience</h2>
+      </div>
     </div><!-- End Page Title -->
 
-    <!-- Starter Section Section -->
+    <!-- Starter Section: Work Timeline -->
     <section id="starter-section" class="starter-section section">
+      <div class="container" data-aos="fade-up">
+        <div class="work-timeline">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h1>work in progress</h1>
-        <p>
-          will write later
-        </p>
+          <!-- Professional Experience (only) -->
+          <div class="work-item" data-aos="fade-up" data-aos-delay="50">
+            <div class="work-date">June 2025 – September 2025</div>
+            <div class="work-role">Software Development Engineer Intern</div>
+            <div class="work-company">Amazon — Prime Video</div>
+            <ul class="work-bullets">
+              <li>Developed a prototype web video player supporting a new proprietary Prime Video manifest format, reducing Time to First Frame (TTFF) by up to <span class="highlight2">600ms</span> compared to the existing DASH implementation.</li>
+              <li>Independently led design, implementation, and testing of playback logic; consulted Principal and Senior Engineers to resolve complex compatibility and performance issues.</li>
+            </ul>
+          </div>
+
+          <div class="work-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="work-date">April 2023 – February 2024</div>
+            <div class="work-role">Data Science Intern</div>
+            <div class="work-company">Claritas</div>
+            <ul class="work-bullets">
+              <li>Developed a scalable PySpark pipeline, filtering over <span class="highlight2">1 million</span> IP addresses across diverse data sources using multiple API integrations.</li>
+              <li>Automated the extraction of campaign data from Parquet files, calculated daily data quality metrics, and developed dynamic dashboards, <span class="highlight2">saving 2 hours of daily manual work.</span></li>
+              <li>Conducted multidimensional analysis of campaign data across tables and dates, identifying trends and detecting anomalies to improve upon decision-making and data quality.</li>
+            </ul>
+          </div>
+
+          <div class="work-item" data-aos="fade-up" data-aos-delay="150">
+            <div class="work-date">July 2021 – August 2021</div>
+            <div class="work-role">Data Analyst Intern</div>
+            <div class="work-company">Nurlink Technology</div>
+            <ul class="work-bullets">
+              <li>Created an automation tool to clean and preprocess incoming daily circuitry data and historical datasets, <span class="highlight2">reducing manual processing time by ~1 hour/day.</span></li>
+              <li>Analyzed circuit features to assess correlations with circuit’s key performance indicators.</li>
+              <li>Applied principal component analysis for 2D visualizations, isolating noise in output power.</li>
+            </ul>
+          </div>
+
+          <div class="work-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="work-date">Jan 2019 – June 2020</div>
+            <div class="work-role">Data Analyst Intern</div>
+            <div class="work-company">San Diego State University (SDSU)</div>
+            <ul class="work-bullets">
+              <li>Analyzed integrated circuit data, processing over <span class="highlight2">1,000 features</span> across datasets of <span class="highlight2">50,000+ samples</span>, identifying key trends and creating visualizations to enhance circuit performance.</li>
+            </ul>
+          </div>
+        </div>
       </div>
-
-    </section><!-- /Starter Section Section -->
+    </section><!-- /Starter Section -->
 
   </main>
   

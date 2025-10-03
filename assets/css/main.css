@@ -14,7 +14,7 @@
   --background-color: #363d5b; /* Background color for the entire website, including individual sections */
   --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #c6e6ff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: hsl(206, 100%, 89%); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #49527b; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -2329,3 +2329,16 @@ section,
    transform: translateY(-100%);
   }
  }
+
+/*--------------------------------------------------------------
+# My Own
+/* highlight used for inline colored words */
+.highlight {
+  color: #e9a7f7;    /* change to any color you want */
+  font-weight: 700;  /* use 700 for bolder */
+}
+
+.highlight2 {
+  color: #b6bcf7;    /* change to any color you want */
+  font-weight: 700;  /* use 700 for bolder */
+}
